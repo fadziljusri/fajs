@@ -1,0 +1,18 @@
+.page-header {
+    z-index: 97;
+}
+
+.sidebar-dismiss {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 98;
+    background: transparent;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-brand {
+        width: unset !important;
+        padding-left: 1rem !important;
+    }
+}

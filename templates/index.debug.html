@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="fjs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FJS</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="vendor/font-awesome/css/fontawesome-all.min.css">
+    <!-- css vendor -->{% assets "css_vendor" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}?r={{r}}"></link>{% endassets %}
+    <!-- css main -->{% assets "css_main" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}?r={{r}}"></link>{% endassets %}
+</head>
+
+<body>
+    <div id="sidebar-dismiss"></div>
+    <div ui-view></div>
+
+    <!-- js vendor -->{% assets "js_vendor" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}?r={{r}}"></script>{% endassets %}
+    <!-- js app -->{% assets "js_app" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}?r={{r}}"></script>{% endassets %}
+</body>
+
+</html>

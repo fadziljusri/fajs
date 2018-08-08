@@ -1,0 +1,44 @@
+<div class="page-wrapper page-wrapper-mobile flex-row align-items-sm-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 p-0">
+                <div class="card p-4 mb-0 mb-sm-4">
+                    <div class="card-header text-center text-uppercase h4 font-weight-light">
+                        Login
+                    </div>
+
+                    <form name="loginForm" ng-submit="doLogin(l)">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="form-control-label">Email</label>
+                                <input type="email" class="form-control" ng-model="l.email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-control-label">Password</label>
+                                <input type="password" class="form-control" ng-model="l.password" required>
+                            </div>
+
+                            <div class="custom-control custom-checkbox mt-4">
+                                <input type="checkbox" class="custom-control-input" id="login">
+                                <label class="custom-control-label" for="login">Check this custom checkbox</label>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-block btn-primary px-5" ng-disabled="loginForm.$invalid">Login</button>
+                                </div>
+
+                                <div class="col-sm-6 text-right text-sm-center mt-5 mt-sm-0">
+                                    <a ui-sref="register" class="btn btn-link">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

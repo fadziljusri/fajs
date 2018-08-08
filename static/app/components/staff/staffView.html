@@ -1,0 +1,109 @@
+<div class="sidebar-fixed header-fixed">
+    <div class="page-wrapper">
+        <nav class="navbar page-header">
+            <a href="" class="btn btn-link sidebar-mobile-toggle d-lg-none">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <a class="navbar-brand" href="">
+                <!-- <img src="images/logo.png" alt="logo"> -->
+                FJS
+            </a>
+
+            <a href="" class="btn btn-link sidebar-toggle d-md-down-none">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="https://github.com/fadziljusri/fjs" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/avatar.png?r={{r}}" class="avatar avatar-sm" alt="logo">
+                        <span class="small ml-1 d-sm-down-none">Fadzil Jusri</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header">Settings</div>
+                        <a href="" class="dropdown-item">
+                            <i class="fa fa-lock"></i> Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="main-container">
+            <div class="sidebar">
+                <nav class="sidebar-nav">
+                    <ul class="nav">
+                        <li class="nav-title">Dashboard</li>
+                        <li class="nav-item">
+                            <a ui-sref="neworder" ui-sref-active="active" class="nav-link">
+                                <i class="fas fa-umbrella"></i> New Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a ui-sref="history" ui-sref-active="active" class="nav-link">
+                                <i class="fas fa-umbrella"></i> History
+                            </a>
+                        </li>
+
+                        <li class="nav-title">More</li>
+                        <li class="nav-item nav-dropdown">
+                            <a href="#" class="nav-link nav-dropdown-toggle">
+                                <i class="fas fa-umbrella"></i> Pages
+                                <i class="fa fa-caret-left"></i>
+                            </a>
+
+                            <ul class="nav-dropdown-items">
+
+                                <li class="nav-item">
+                                    <a ui-sref="login" class="nav-link">
+                                        <i class="fas fa-sign-in-alt"></i> Login
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a ui-sref="register" class="nav-link">
+                                        <i class="fas fa-sign-out-alt"></i> Register
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a ui-sref="404" class="nav-link">
+                                        <i class="fas fa-exclamation-circle"></i> 404
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a ui-sref="500" class="nav-link">
+                                        <i class="fas fa-exclamation-circle"></i> 500
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://github.com/fadziljusri/fjs" target="_blank" class="nav-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content px-0">
+                <div class="container-fluid">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <div ui-view></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

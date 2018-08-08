@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fjs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A Flask AngularJS dashboard boilerplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="fadziljusri, Fadzil Jusri, Software Developer, Developer, Freelancer, Freelance Service, IT Projects, Programmer, UTP, Universiti Teknologi PETRONAS, Malaysia">
+    <meta name="author" content="Fadzil Jusri">
+
+    <title>FJS</title>
+    <link rel="icon" href="favicon.ico?r={{r}}" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico?r={{r}}" type="image/x-icon" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/font-awesome/css/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/vendor.min.css')}}?r={{r}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.min.css')}}?r={{r}}">
+</head>
+
+<body>
+
+    <div id="sidebar-dismiss"></div>
+    <div ui-view></div>
+
+    <script src="{{ url_for('static', filename='scripts/vendor.min.js')}}?r={{r}}"></script>
+    <script src="{{ url_for('static', filename='scripts/app.min.js')}}?r={{r}}"></script>
+</body>
+
+</html>

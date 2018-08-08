@@ -1,0 +1,10 @@
+flask==0.12.2
+Flask-Script==2.0.6
+Flask-Assets==0.12
+jsmin==2.2.2
+cssmin==0.2.0
+gunicorn==19.7.1
+
+# flask-compress==1.4.0
+
+
