@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('fjs', [
+var app = angular.module('fajs', [
     'ui.router',
     'app.routers',
     'app.services',

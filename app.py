@@ -1,7 +1,7 @@
 import random
 
 from flask import render_template
-from _fjs_ import app
+from server import app
 
 
 @app.route('/')

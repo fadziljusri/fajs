@@ -7,7 +7,7 @@ from flask import render_template, Blueprint
 from flask_script import Manager, Server
 from flask_assets import Environment, Bundle, ManageAssets
 
-from _fjs_ import app
+from server import app
 
 @app.route('/')
 def index():

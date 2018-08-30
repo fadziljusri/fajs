@@ -1,4 +1,4 @@
-# fjs
+# fajs
 A Flask AngularJS dashboard boilerplate
 
 ## Getting Started
@@ -37,6 +37,3 @@ python app.py
 
 ## Credits
 * [Mohammed Isa](https://github.com/mohd-isa/carbon) - Bootstrap 4 admin template
-
-## Authors
-* Fadzil Jusri
