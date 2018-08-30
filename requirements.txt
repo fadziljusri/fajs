@@ -1,4 +1,4 @@
-flask==0.12.2
+flask==0.12.4
 Flask-Script==2.0.6
 Flask-Assets==0.12
 jsmin==2.2.2
